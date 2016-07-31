@@ -12,6 +12,7 @@ import sys
 
 import nsfg
 import thinkstats2
+import statsmodels.formula.api as smf
 
 
 def main(script):
