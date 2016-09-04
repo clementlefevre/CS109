@@ -1,0 +1,2195 @@
+Lis1 Acts as a ‘‘Clutch’’ between
+the ATPase and Microtubule-Binding
+Domains of the Dynein Motor
+
+Julie Huang,1,4 Anthony J. Roberts,1,2,4 Andres E. Leschziner,3 and Samara L. Reck-Peterson1,*
+1Department of Cell Biology, Harvard Medical School, Boston, MA 02115, USA
+2Astbury Centre for Structural Molecular Biology, School of Molecular and Cellular Biology, Faculty of Biological Sciences,
+University of Leeds, Leeds LS2 9JT, UK
+3Department of Molecular and Cellular Biology, Harvard University, Cambridge, MA 02138, USA
+4These authors contributed equally to this work
+*Correspondence: reck-peterson@hms.harvard.edu
+http://dx.doi.org/10.1016/j.cell.2012.07.022
+Open access under CC BY license.
+
+SUMMARY
+
+The lissencephaly protein Lis1 has been reported to
+regulate the mechanical behavior of cytoplasmic
+dynein, the primary minus-end-directed microtubule
+motor. However, the regulatory mechanism remains
+poorly understood. Here, we address this issue using
+puriﬁed proteins from Saccharomyces cerevisiae
+and a combination of techniques, including single-
+molecule imaging and single-particle electron micro-
+scopy. We show that rather than binding to the main
+ATPase site within dynein’s AAA+ ring or its microtu-
+bule-binding stalk directly, Lis1 engages the inter-
+face between these elements. Lis1 causes individual
+dynein motors to remain attached to microtubules for
+extended periods, even during cycles of ATP hydro-
+lysis that would canonically induce detachment.
+Thus, Lis1 operates like a ‘‘clutch’’ that prevents
+dynein’s ATPase domain from transmitting a detach-
+ment signal to its track-binding domain. We discuss
+how these ﬁndings provide a conserved mechanism
+for dynein functions in living cells that require pro-
+longed microtubule attachments.
+
+INTRODUCTION
+
+To help create the complex internal organization within eukary-
+otic cells, the myosin and kinesin motor protein families have
+undergone widespread gene duplication and evolution, presum-
+ably so they can fulﬁll particular functional niches (e.g., transport-
+ing cargos, bearing tension, and sliding ﬁlaments; Vale, 2003).
+Accordingly, their members show a spectrum of properties,
+with different catalytic rates and structural adaptations. A strik-
+ing departure from this pattern is one of the least understood
+cytoskeletal motors, cytoplasmic dynein (Figure 1A). This one
+motor powers nearly all movement toward the microtubule
+minus end in most eukaryotic cells. Its many functions include
+transporting and positioning diverse cargos (e.g., mRNAs,
+
+proteins, and organelles) during interphase, exerting tension
+between the microtubule network and cell cortex during cell
+migration, and helping to construct the spindle during mitosis
+and meiosis (Karki and Holzbaur, 1999; Vale, 2003). Regulation
+of dynein is therefore critical, and human diseases arise from
+its dysfunction (Gerdes and Katsanis, 2005).
+In addition to
+task-speciﬁc regulators, cytoplasmic dynein has three ubiqui-
+tous cofactors that are required for most, if not all, of its functions
+across eukaryotes (Kardon and Vale, 2009; Vallee et al., 2012):
+the dynactin complex and two proteins analyzed in this study,
+Lis1 and Nudel.
+
+Dynein’s ATP-hydrolyzing and track-binding elements are key
+potential targets for regulation and differ in three signiﬁcant ways
+from those of myosin and kinesin. First, rather than a compact
+fold, dynein’s ATPase domain is ring shaped, containing six
+covalently linked AAA+ modules (Neuwald et al., 1999; Roberts
+et al., 2009). Second, rather than a single site of ATP binding/
+hydrolysis, four of dynein’s AAA+ modules (AAA1–AAA4) can
+bind nucleotide, with AAA1 being the main site of ATP hydrolysis
+(Cho et al., 2008; Gibbons et al., 1991; Kon et al., 2004, 2012;
+Schmidt et al., 2012). Finally, instead of close integration of the
+track-binding and hydrolysis sites, these domains in dynein are
+spatially separated by a 10 nm intramolecular coiled-coil stalk,
+which protrudes from AAA4 (Cho and Vale, 2012).
+
+Together, dynein’s architectural features make interdomain
+communication a central part of its mechanism and an additional
+potential target for regulation. For example, structural changes
+within dynein’s AAA+ ring, driven by ATP binding and hydrolysis
+at AAA1, produce cyclic changes in the afﬁnity of the microtu-
+bule-binding domain at the stalk’s tip (Imamula et al., 2007;
+Kon et al., 2004, 2009).
+In some distantly related AAA+
+ATPases, pulses of structural changes are transmitted around
+the ATPase ring with the assistance of arginine ﬁnger motifs
+that reach from one subunit into the active site of the neighboring
+subunit (Erzberger and Berger, 2006). However, the extent to
+which dynein uses similar mechanisms is unknown.
+
+A strong candidate for altering the structural changes within
+dynein is the evolutionarily conserved protein Lis1. Mutations
+in the human LIS1 gene cause classical lissencephaly, a severe
+brain development disorder (Reiner et al., 1993). In brain slices
+
+Cell 150, 975–986, August 31, 2012 ª2012 Elsevier Inc. 975
+
+and cultured cells, perturbing Lis1 levels causes defects in
+dynein-mediated processes such as nuclear migration, mitosis,
+and cargo transport (Ding et al., 2009; Faulkner et al., 2000;
+Pandey and Smith, 2011; Smith et al., 2000; Tai et al., 2002;
+Tanaka et al., 2004; Tsai et al., 2007; Yi et al., 2011). Like cyto-
+plasmic dynein’s force-generating subunit, Lis1 is dimeric.
+Each Lis1 protomer contains an N-terminal dimerization domain
+and a C-terminal b-propeller domain that binds to the dynein
+motor domain (Figure 1A; Sasaki et al., 2000; Tai et al., 2002;
+Tarricone et al., 2004). A coiled-coil protein, Nudel
+(or its
+paralogue, NudE), is thought to further tether Lis1 to dynein
+(McKenney et al., 2010), allowing Lis1 to function at lower
+concentrations in vivo (Eﬁmov, 2003; Li et al., 2005; Wang and
+Zheng, 2011; _Zy1kiewicz et al., 2011). In Saccharomyces cerevi-
+siae, the Lis1 and Nudel orthologs (Pac1 and Ndl1, respectively)
+serve to concentrate dynein at the plus ends of microtubules
+(Lee et al., 2003; Li et al., 2005; Sheeman et al., 2003). This is
+a critical step in targeting dynein to the cell membrane, where
+it positions the nucleus during cell division.
+
+A range of properties has been ascribed to Lis1, including
+slowing dynein-driven microtubule sliding in multiple motor
+assays, prolonging dynein stall events under
+load, and
+enhancing the microtubule afﬁnity of dynein when ADP and Vi
+(a phosphate analog) are bound (McKenney et al., 2010; Tori-
+sawa et al., 2011; Yamada et al., 2008). However, Lis1’s mech-
+anism of action remains largely mysterious, in part because of
+the lack of a recombinant system in which both Lis1 and dynein
+can be manipulated and studied at the single-molecule level.
+Although reports have suggested that Lis1 binds the AAA1
+module of dynein (Sasaki et al., 2000; Tai et al., 2002), this
+has not been tested with functional proteins, and structural
+information on the dynein/Lis1 complex is not yet available.
+Moreover, reconciling the reported in vitro effects of Lis1 and
+Nudel with speciﬁc dynein activities in vivo has been contro-
+versial (Allan, 2011).
+
+Here,
+
+using
+
+proteins
+
+functional,
+
+recombinant
+
+from
+S. cerevisiae, we show that Lis1 engages dynein at AAA3/
+AAA4. From this site, Lis1 acts like a ‘‘clutch’’ to regulate commu-
+nication between dynein’s catalytic ring and microtubule-binding
+stalk, promoting a microtubule-bound state. Supporting these
+results, we identify mutations at the AAA3/4 junction that drasti-
+cally impair Lis1 binding and motility regulation in vitro and
+dynein function in vivo. In addition, we identify an arginine ﬁnger
+motif within AAA4 and ﬁnd that its mutation mimics aspects of
+Lis1’s effect in vitro. Previous genetic studies in an evolutionarily
+distant ﬁlamentous fungus showed that the same mutation can
+partially rescue Lis1 loss in vivo (Zhuang et al., 2007). These
+results allow us to propose how Lis1 biases dynein to a microtu-
+bule attached-state and assists in a variety of cellular functions
+across eukaryotes.
+
+RESULTS
+
+Lis1 Promotes a Microtubule-Attached State in Single
+Dynein Molecules
+To dissect how Lis1 and Nudel regulate dynein’s motility, we
+wanted a system in which all three components could be manip-
+ulated and studied at the single-molecule level (Figure 1A). We
+
+976 Cell 150, 975–986, August 31, 2012 ª2012 Elsevier Inc.
+
+previously developed methods to purify native cytoplasmic
+dynein complexes from S. cerevisiae, ﬂuorescently label them
+with tetramethylrhodamine (TMR; via a C-terminal HaloTag),
+and visualize their movement along immobilized microtubules
+(Reck-Peterson et al., 2006). Here, we puriﬁed Lis1 and Nudel
+(Figure 1B), which were expressed from their genomic loci in
+S. cerevisiae. We inserted cleavable tags for afﬁnity puriﬁcation
+and a C-terminal SNAP-tag (giving the option of covalent
+labeling). The 20-kDa SNAP-tag did not interfere with the func-
+tion of either protein, as revealed in nuclear segregation assays
+(Figure 1C). We eliminated the risk of endogenous regulators
+(Lis1, Nudel, and dynactin) from copurifying with dynein via
+genomic deletions (Table S1 available online).
+
+We began by observing dynein motility at the single-molecule
+level over a range of Lis1 concentrations. In the absence of Lis1,
+dynein bound to and traveled along microtubules with a
+mean velocity of 100 nm/s (Figure 1D), similar to previous
+reports (Reck-Peterson et al., 2006). As the Lis1 concentration
+increased, two trends were apparent. First, dynein velocity
+became progressively slower, reaching 7 nm/s at the highest
+Lis1 concentration tested (1,200 nM). This can be appreciated
+in the kymographs in Figure 1D, in which steeper lines indicate
+slower movement. Second, Lis1 increased the length of time
+that dynein remained attached to the microtubule. For example,
+at 1,200 nM Lis1, many dynein molecules were attached for the
+entire duration of a 10 min movie (seen in Figure 1D as lines that
+span the kymograph’s y axis; see Figures S1A–S1D for quantiﬁ-
+cation). Control assays with kinesin showed that the effect of
+Lis1 is speciﬁc to dynein (Figures S1E and S1F). Thus we
+conclude that Lis1 can convert dynein to a mechanochemical
+state in which its velocity is slowed and its microtubule attach-
+ments are prolonged.
+
+Notably, at a given Lis1 concentration, the population of
+dynein molecules responded similarly: velocity histograms re-
+mained unimodal as the mean decreased (Figure 1F). We plotted
+dynein’s velocity as a function of Lis1 concentration. The plot is
+well ﬁtted by a hyperbolic curve with a maximal velocity reduc-
+tion of 95.7 ± 3.1% (Figure 1G; Table S2A). These data show
+that saturating concentrations of Lis1 can almost entirely arrest
+dynein on the microtubule. The Lis1 concentration giving half-
+in this assay is 60.1 ±
+maximal velocity reduction (K1/2)
+10.0 nM. Hereafter, we refer to dynein in the presence of near-
+saturating Lis1 concentrations (>5-fold higher than the K1/2) as
+dynein/Lis1.
+
+We next tested whether Nudel, Lis1 and dynein’s binding
+partner, affects the behavior of single dynein molecules
+in vitro. At 37.5 nM, Nudel alone had little effect on dynein motility
+(Figures S1G and S1H). By contrast, a mixture of 37.5 nM Nudel
+and 37.5 nM Lis1 elicited a change in dynein behavior akin to that
+induced by a 5-fold higher Lis1 concentration. The mean
+velocity was slowed to 29 nm/s, and microtubule encounters
+were markedly prolonged (Figures 1E and S1H). These results
+show interesting similarities and differences compared with
+earlier work. In previous in vitro experiments, mammalian Nudel
+was found to dissociate dynein from microtubules and suppress
+Lis1’s effect on the velocity of unloaded dynein (McKenney et al.,
+2010; Yamada et al., 2008). In contrast, we ﬁnd that Nudel from
+S. cerevisiae allows Lis1 to exert its effect on dynein at lower
+
+A
+
+B
+
+dynein
+
+Lis1
+
+Nudel
+
+tail
+
+1
+2
+3 4
+AAA+ ring
+
+stalk
+
+microtubule
+
+kDa
+250
+150
+100
+
+75
+
+50
+
+37
+
+25
+
+Lis1
+
+Nudel
+
+C
+
+s
+
+l
+l
+
+t
+
+e
+c
+e
+a
+e
+c
+u
+n
+b
+
+i
+
+l
+
+t
+
+n
+a
+r
+r
+e
+b
+a
+%
+
+50
+
+40
+
+30
+
+20
+
+10
+
+0
+
+T
+W
+
+1
+s
+L
+
+i
+
+i
+
+n
+e
+n
+y
+d
+
+1
+s
+L
+
+i
+
+d
+e
+g
+g
+a
+
+t
+
+l
+
+d
+e
+g
+g
+a
+
+e
+d
+u
+N
+
+t
+
+l
+
+e
+d
+u
+N
+
+0
+
+60 s
+
+D
+
+e
+m
+
+i
+t
+
+5 μm
++
+
+microtubule
+100.5 ± 37.3
+
+-
+
+F
+
+s
+t
+
+n
+e
+v
+e
+
+ 
+f
+
+o
+ 
+r
+e
+b
+m
+u
+n
+
+200
+
+150
+
+100
+
+50
+
+0
+
+[Lis1] (nM)
+
+75
+
+150
+
+1200
+
+E
+
+37.5 nM Lis1
+37.5 nM Nudel
+
+47.8 ±  19.3 
+39.9 ± 14.8
+velocity (mean ± SD, nm/s)
+
+6.7 ± 3.5
+
+29.1 ± 12.5
+
+0 nM Lis1
+75 nM Lis1
+
+G
+
+)
+s
+/
+m
+n
+(
+y
+t
+i
+c
+o
+e
+v
+
+l
+
+100
+
+75
+
+50
+
+25
+
+0
+
+60.1 ± 10.0 nM
+
+Figure 1. Impact of Lis1 on Single Dynein
+Molecule Motility
+(A) Diagram of dynein, Lis1, and Nudel constructs.
+The C terminus of dynein’s heavy chain is tagged
+with a HaloTag and covalently bound to tetrame-
+thylrhodamine (TMR; red asterisk).
+(B) Puriﬁcation of yeast Lis1 and Nudel. Lis1 and
+Nudel were isolated from S. cerevisiae using
+afﬁnity puriﬁcation tags followed by removal of
+tags by TEV protease cleavage. SDS-PAGE shows
+Lis1 and Nudel after the ﬁnal puriﬁcation step.
+Arrowheads indicate Lis1 and Nudel protein.
+(C) C-terminal SNAP tags on Lis1 and Nudel
+do not affect their nuclear segregation function
+in vivo. Cells expressing Lis1 or Nudel mod-
+iﬁed with the SNAP tag (tagged) have near-WT
+levels of aberrant binucleate cells. The mean and
+SE of proportion are shown (n > 206 per data
+point).
+(D) Kymographs of TMR-labeled dynein mole-
+cules moving along microtubules over time in
+the presence of increasing concentrations of Lis1.
+Plus (+) and minus ( )
+indicate microtubule
+polarity. The mean velocity for each condition
+is shown below (n > 100 per data point). For
+average durations of microtubule association and
+average run lengths as a function of Lis1 con-
+centration, see Figures S1A–S1D. The effect of
+Lis1 on kinesin motility is shown in Figures S1E
+and S1F.
+(E) Kymograph of TMR-labeled dynein molecules
+in the presence of 37.5 nM Lis1 and 37.5 nM
+Nudel, with mean velocity below (n = 217). Time
+and distance scales are as in (D). Additional
+quantiﬁcation is shown in Figures S1G and S1H.
+(F) Histogram showing the velocity distribution of
+single dynein molecules in the absence of Lis1
+(dark gray; n = 498) and at one example Lis1
+concentration (75 nM; light gray; n = 539). At all
+Lis1 concentrations tested (37.5, 75, 150, 300,
+600, and 1,200 nM), the dynein velocity distribu-
+tion was unimodal and could be well ﬁt by a single
+Gaussian (R2 values between 0.8448 and 0.9894;
+data not shown).
+(G) Plot of dynein velocity as a function of Lis1
+concentration. Data points from two independent
+dynein preparations are shown (black and white
+circles; n > 100 per data point). Data were ﬁt to
+
+0 50 100 150 200
+
+0
+
+velocity (nm/s)
+
+the following equation: V = V0 (1   [(Fmax[Lis1]) /
+(K1/2 + [Lis1])]), in which V = velocity at a given
+Lis1 concentration, [Lis1]; V0 = velocity of dynein
+in the absence of Lis1; Fmax = maximal fractional velocity reduction; and K1/2 = [Lis1] required for half maximal velocity reduction. The best-ﬁt values (±error of
+the ﬁt) are V0 = 100.0 ± 3.506 nm/s, Fmax = 0.957 ± 0.031, and K1/2 = 60.1 ± 10.0 nM. The R2 value is 0.9797. See also Table S2A.
+
+500
+[Lis1] (nM)
+
+1000
+
+concentrations even in unloaded conditions. This matches
+observations from previous experiments in living fungi and frog
+egg extracts, in which increasing Lis1’s concentration rescued
+Nudel deletion or depletion, respectively (Eﬁmov, 2003; Li
+et al., 2005; Wang and Zheng, 2011; _Zy1kiewicz et al., 2011).
+
+The Lis1 b Propeller Domain Contains Regulatory
+Elements that Act on Dynein’s Motor
+To test which structural domains are required for Lis1 to regulate
+dynein motility, we analyzed the motility of a well-characterized
+dimeric motor domain construct (GST-dynein331 kDa; Reck-
+
+Peterson et al., 2006). GST-dynein331 kDa, which lacks the
+N-terminal tail, endogenous dimerization motif, and binding sites
+for associated dynein subunits, contains two motor domains
+dimerized by GST (Figure 2A) and displays processive motility
+similar to that of native dynein. In the absence of Lis1, GST-
+dynein331 kDa traveled along microtubules with a mean velocity
+of 116 nm/s (Figure 2B). Strikingly, Lis1 also reduced the
+velocity and prolonged microtubule attachments of GST-
+dynein331 kDa in a dose-dependent manner (Figures 2B and
+S2A–S2D; Table S2B). The maximal velocity reduction was
+similar to that observed in native dynein (Figure 2C), but the
+
+Cell 150, 975–986, August 31, 2012 ª2012 Elsevier Inc. 977
+
+F
+
+600
+
+B
+
+[Lis1] (nM)
+
+A
+
+D
+
+E
+
+5 μm
+
+300
+
+C
+
+e
+m
+
+i
+t
+
+0
+
+0
+
+0
+
+60 s
+
+800
+
+1600
+
+125
+
+100
+
+37.5
+
+75
+
+50
+
+25
+
+Lis1ΔN
+
+22.2 ± 8.3
+
+0
+5 μm
+
+dynein331 kDa
+
+[Lis1ΔN] (nM)
+
+)
+s
+/
+m
+n
+(
+y
+t
+i
+c
+o
+e
+v
+
+l
+
+15.3 ± 2.3 nM
+
+115.9 ± 67.2 44.7 ± 19.5
+
+200
+400
+[Lis1] (nM)
+
+velocity (mean ± SD, nm/s)
+
+GST-dynein331 kDa Lis1
+
+Figure 2. Deﬁning Structural Domains
+Required for Motility Regulation by Lis1
+(A) Diagram of GST-dynein331 kDa and Lis1
+constructs. The GST dimerization domain is
+shown in yellow, and the C terminus is tagged with
+a HaloTag and covalently bound to TMR (red
+asterisk).
+(B) Kymographs of TMR-labeled GST-dynein331 kDa
+molecules in the presence of
+increasing con-
+centrations of Lis1. The mean velocity for each
+condition is shown below (n > 200 per data point).
+See also Table S2B. For average durations of
+microtubule association and average run lengths
+as a function of Lis1 concentration, see also Figures
+S2A–S2D.
+(C) Plot of GST-dynein331 kDa velocities as a func-
+tion of Lis1 concentration. Data points from
+three independent dynein preparations are shown
+(black, gray, and white circles; n > 104 per data
+point). Data were ﬁt as described in Figure 1G
+(R2 = 0.9652; V0 = 114.4 ± 3.531 nm/s, Fmax =
+0.877 ± 0.025, and K1/2 = 15.3 ± 2.3 nM).
+(D) Diagram of microtubule gliding assay. Mono-
+meric GFP-dynein331 kDa molecules are immobi-
+lized to the coverslip via antibodies to GFP (green).
+Dynein-driven gliding of microtubules (labeled
+with TMR; red asterisks) is visualized in the pres-
+ence or absence of monomeric Lis1 (Lis1DN).
+(E) Elution proﬁles of dimeric Lis1 (red) and
+monomeric Lis1DN (green) from a size-exclusion column. Elution volumes of standards with known Stokes radii (RS) are shown above. The calculated Stokes radii
+of dimeric Lis1 and Lis1DN are 5.3 nm and 3.3 nm, respectively. See also Figure S2E.
+(F) Upper: kymographs of taxol-stabilized microtubules moving via dynein-dependent gliding in the presence of increasing amounts of Lis1DN. Kymographs
+show one end of the microtubule. Lower: plot of mean velocities (±SD; n = 10–21) ﬁt as described in Figure 1G (R2 = 0.9742; V0 = 55.48 ± 0.6759 nm/s, Fmax =
+0.814 ± 0.059, and K1/2 = 299.1 ± 97.1 nM). The effect of Lis1DN on kinesin-dependent microtubule gliding is shown in Figure S2F.
+(G) Overexpression of Lis1DN (Gal1-Lis1DN) partially rescues the aberrant binucleate phenotype of S. cerevisiae cells lacking Lis1 (Lis1D). Cells expressing
+dimeric Lis1 (WT) or monomeric Lis1 (Lis1DN) under the control of the endogenous Lis1 promoter are as indicated. The mean and SE of proportion are shown
+(n > 201 per data point). See also Figure S2G.
+
+RS (nm)
+6.1 5.4 4.6 3.6
+Lis1
+
+elution volume (ml)
+1.6
+
+1.8
+
+500
+1000
+[Lis1ΔN] (nM)
+
+t
+
+e
+c
+e
+a
+e
+c
+u
+n
+b
+
+i
+
+l
+
+60
+40
+20
+0
+
+t
+
+n
+a
+r
+r
+e
+b
+a
+%
+
+l
+
+y
+t
+i
+c
+o
+e
+v
+ 
+g
+n
+d
+
+i
+
+i
+
+1
+s
+L
+-
+1
+a
+G
+
+l
+
+)
+3
+-
+0
+1
+x
+(
+ 
+
+0
+8
+2
+A
+
+)
+s
+/
+m
+n
+(
+
+60
+
+30
+
+0
+
+20
+
+10
+
+40
+
+30
+
+G
+
+s
+
+l
+l
+
+1
+s
+L
+
+i
+
+1
+s
+L
+
+i
+
+2.0
+
+Lis1ΔN
+
+N
+
+N
+
+T
+W
+
+2.0
+
+i
+l
+
+g
+
+0
+
+e
+m
+
+i
+t
+
+60 s
+
+0
+
+1500
+
+K1/2 of Lis1 is lower (15 nM). This difference is consistent with
+
+the notion that the afﬁnity of Lis1 for dynein increases when
+dynein’s tail domain is removed (Markus et al., 2009; Reck-
+Peterson et al., 2006). These results indicate that Lis1 regulates
+dynein motility by acting on elements within the motor domain.
+We next tested whether dimerization of either Lis1 or dynein is
+an essential part of the regulatory mechanism, using puriﬁed
+monomeric dynein331 kDa, whose motor activity can be analyzed
+using a microtubule gliding assay (Figure 2D). To produce mono-
+meric Lis1 (Lis1DN), we removed Lis1’s N-terminal dimerization
+domain. The monomeric state of Lis1DN was veriﬁed by size-
+exclusion chromatography (Figure 2E) and crosslinking (Fig-
+ure S2E). Monomeric dynein331 kDa drove microtubule gliding
+at a velocity of 55.5 nm/s (Figure 2F). Signiﬁcantly, in the pres-
+ence of 800 nM Lis1DN, gliding velocity slowed by 60% (to
+21.5 nm/s) and decreased by 70% (to 16.2 nm/s) when the
+Lis1DN concentration was increased to 1,600 nM. These data
+indicate that a single b-propeller domain of Lis1 can regulate
+the activity of a single dynein motor domain, provided it is
+supplied at an elevated concentration (perhaps explaining why
+similar effects were not observed in a previous study; Torisawa
+et al., 2011).
+
+We next tested these ﬁndings in living cells. Yeast expressing
+monomeric Lis1DN as the sole source of Lis1 exhibited a strong
+
+nuclear segregation defect (22%; Figure 2G), consistent with
+malfunction of the dynein pathway. However, when the cellular
+concentration of Lis1DN was increased >10-fold with the use
+of a strong, galactose-inducible promoter (Figure S2G), the
+percentage of cells with a nuclear segregation defect was
+rescued to 10% (Figure 2G). This suggests that a monomeric
+Lis1 construct comprising the b-propeller domain can regulate
+dynein both in vitro and in vivo, provided its concentration is
+sufﬁciently high. Thus, dimerization serves to enhance the
+apparent afﬁnity between dynein and Lis1.
+
+Lis1 Alters Allosteric Communication between Dynein’s
+ATPase and Microtubule-Binding Domains
+In principle, dynein could be converted to a microtubule-
+attached state by arresting its ATPase cycle at a stage corre-
+sponding to strong microtubule afﬁnity (e.g., with ADP or no
+nucleotide bound). Previous ATPase results obtained with
+brain-puriﬁed dynein in the presence of Lis1 have varied
+(McKenney et al., 2010; Mesngon et al., 2006; Yamada et al.,
+2008), perhaps due to heterogeneity between and within dynein
+preparations. To test for Lis1-induced catalytic arrest in our
+system, we measured the ATPase activity of dynein with different
+concentrations of Lis1 and microtubules. The basal ATPase rate
+of GST-dynein331 kDa alone was activated by microtubules to
+
+978 Cell 150, 975–986, August 31, 2012 ª2012 Elsevier Inc.
+
+A
+
+GST-dynein331 kDa
+
+B
+
+GST-dynein331 kDa + Lis1
+
+i
+
+)
+1
+-
+s
+1
+-
+n
+a
+m
+o
+d
+-
+r
+o
+o
+m
+
+t
+
+(
+e
+s
+a
+P
+T
+A
+
+10
+
+5
+
+0
+
+0
+
+5
+
+[MT] (μM)
+
+10
+
+C
+
+D
+
+ - Lis1
+
+buffer
+
+e
+m
+
+i
+t
+
+ATP
+
+i
+
+)
+1
+-
+s
+1
+-
+n
+a
+m
+o
+d
+-
+r
+o
+o
+m
+
+t
+
+(
+e
+s
+a
+P
+T
+A
+
+E
+
+ATP
+
+10
+
+5
+
+0
+
+0
+
+5
+
+[MT] (μM)
+
+10
+
+ - Lis1
+
+F
+
+ATP
+
+ + 800 nM Lis1
+
+5 s
+
+Figure 3. Lis1-Induced Changes in Dynein
+Mechanochemistry
+(A) Microtubule-stimulated ATPase activity of
+GST-dynein331 kDa in the absence of Lis1. Data
+points from two dynein preparations are shown
+(black and white circles). Data were ﬁt to the
+
+following equation: kobs = (kcat   kbasal)   [MT]/
+(Km(MT) + [MT]) + kbasal. The basal ATPase rate
+ 1 s
+ 1 (± SE of ﬁt)
+(kbasal) of 2.7 ± 0.2 motor-domain
+is activated by microtubules to a maximal rate (kcat)
+ 1 s
+ 1. The Km(MT) is
+of 10.8 ± 0.5 motor-domain
+0.09 ± 0.01 mM (i.e., the microtubule concentration
+that gives half-maximal activation).
+(B) Microtubule-stimulated ATPase activity of
+GST-dynein331 kDa in the presence of 140 nM Lis1.
+Data points from two dynein preparations are
+shown (black and white circles). Data were ﬁt as
+described in (A). The basal ATPase rate of 6.3 ±
+ 1 is activated by microtu-
+0.2 motor-domain
+bules to a maximal rate of 9.3 ± 0.1 motor-
+domain
+(C) Diagram of the single-molecule microtubule re-
+lease assay. TMR-labeled monomeric dynein331 kDa
+molecules are bound to microtubules in the absence
+of ATP. Perfusion with ATP causes release.
+(D–F) Kymographs of TMR-labeled dynein331 kDa
+molecules. After prebinding to microtubules in the
+absence of ATP, dynein331 kDa-TMR molecules are
+monitored for release and rebinding upon perfusion
+of (D) buffer lacking ATP, (E) 5 mM ATP, or (F) 5 mM
+ATP in the presence of 800 nM Lis1. Similar results
+were observed using microtubules (data not
+shown) and axonemal microtubules (shown). See
+Figures S3A and S3B for quantiﬁcation of off-rates.
+
+ 1. The Km(MT) is 0.20 ± 0.05 mM.
+
+ 1 s
+
+ 1 s
+
+ 1 s
+
+ 1 (Figure 3A). Addition
+a maximal rate of 10.8 motor-domain
+of Lis1 also activated the basal ATPase rate (Figure 3B), indi-
+cating that Lis1 binding alters turnover in one or more of dynein’s
+catalytic AAA+ modules. Interestingly, in the presence of micro-
+tubules, the maximal ATPase rate of GST-dynein331 kDa/Lis1
+retained 90% of the value for GST-dynein331 kDa alone (Fig-
+
+ure 3B). This was the case even in extremely high Lis1 con-
+centrations (2 mM; data not shown). Thus, in the presence of
+microtubules, dynein/Lis1 can continue to hydrolyze ATP, indi-
+cating that Lis1-mediated motility regulation is more complex
+than a simple arrest of the ATPase cycle.
+
+In a canonical mechanochemical cycle, dynein’s motor
+domain dissociates from the microtubule after ATP binding. In
+a dynein dimer, this allows one motor to detach and undergo
+a forward excursion along the microtubule while the partnering
+motor remains bound. To test whether Lis1 alters this mechano-
+chemical coupling, we developed an assay to visualize the
+ATP-sensitive interactions of
+individual motor domains with
+microtubules (Figure 3C). Monomeric, ﬂuorescently labeled
+dynein331 kDa molecules were bound to surface-immobilized
+microtubules in the absence of nucleotide,
+inducing strong
+‘‘rigor’’ binding. The molecules appeared as stationary, diffrac-
+tion-limited spots by total
+reﬂection ﬂuorescence
+(TIRF) microscopy and as vertical
+lines in kymographs (Fig-
+ure 3D). Addition of ATP caused monomeric dynein331 kDa mole-
+cules to rapidly dissociate from the microtubule (Figure 3E,
+arrow). Dissociation was not due to laminar ﬂow or dilution, as
+
+internal
+
+the molecules remained attached after perfusion with buffer (Fig-
+ure 3D, arrow). After ATP-induced dissociation, monomeric
+dynein331 kDa was free to diffuse away from the microtubule.
+Subsequent rebinding events were short and probably corre-
+spond to single turnovers of ATP (Figure 3E). The presence of
+Lis1 caused two main differences in these behaviors. First,
+instead of dissociating rapidly after ATP addition, dynein331 kDa
+remained bound to the microtubule for extended periods
+(average duration of 6 s) before detaching (Figures 3F and
+S3A). Second, the duration of rebinding events was similarly pro-
+longed (Figure S3B). Thus, Lis1 slows the microtubule off-rate of
+dynein in ATP conditions. Multiple ATP hydrolysis cycles are
+likely to occur during these extended periods of microtubule
+attachment (see Figure 3B and data below). These results
+suggest a model in which Lis1 alters communication between
+dynein’s catalytic AAA+ modules and microtubule-binding stalk,
+allowing the motor domain to remain tightly bound to the micro-
+tubule even in high ATP concentrations.
+
+Impact of Lis1 on Dynein Stepping Behavior
+A prediction of this model
+is that Lis1 will cause the motor
+domains in a dynein dimer to remain attached to the microtubule
+for longer periods between steps, giving rise to slower motion. If
+this prediction is correct, then it might be possible to observe
+individual steps even at a physiological ATP concentration
+(1 mM) without hindering load, conditions under which dynein’s
+steps have previously been too rapid to detect. To test this, we
+
+Cell 150, 975–986, August 31, 2012 ª2012 Elsevier Inc. 979
+
+A GST-dynein331 kDa
+
+C
+
+Qdot
+
+Lis1
+
+s
+t
+n
+e
+v
+e
+
+f
+
+o
+r
+e
+b
+m
+u
+n
+
+40
+30
+20
+10
+0
+
+0
+
+2
+
+B
+
+5 s
+
+32 nm
+
+dynein
+
+1 mM ATP
+
+ GST-dynein331 kDa
++ 800 nM Lis1
+
+8 10 12 14
+
+6
+
+4
+dwell time (s)
+
+dynein + 800 nM Lis1
+
+1 mM ATP
+
+t
+n
+e
+m
+e
+c
+a
+p
+s
+d
+
+i
+
+l
+
+*
+
+time
+
+dynein 
+
+1 µM ATP
+
+Figure 4. Stepping Behavior of Dynein/Lis1
+(A) Diagram of Lis1 and GST-dynein331 kDa labeled at its C terminus with
+a Qdot.
+(B) Examples of GST-dynein331 kDa high-precision stepping traces in the
+presence of 1 mM ATP (blue), 1 mM ATP (green), or 1 mM ATP and 800 nM Lis1
+(red). Raw data are shown as black circles. Steps detected by an automated
+step-ﬁnding algorithm (see Extended Experimental Procedures) are depicted
+with colored lines. The red asterisk highlights an example of a long pause
+(dwell) by dynein/Lis1. Data were acquired every 100 ms. See also Figure S3C.
+(C) Histogram showing dwell times between steps by GST-dynein331 kDa in the
+presence of Lis1, acquired from 209 steps from 10 moving dynein molecules.
+
+attached a bright, photostable quantum dot (Qdot) to the C
+terminus of one of dynein’s motor domains (Figure 4A; Reck-
+Peterson et al., 2006). Dynein’s movement along microtubules
+could then be tracked with nanometer precision and a temporal
+resolution of 100 ms.
+
+As expected, free GST-dynein331 kDa moved rapidly in 1 mM
+ATP, and high-precision traces showed smooth rather than step-
+wise motion, consistent with a stepping rate that matches or
+exceeds the temporal resolution (Figure 4B, green trace). In
+contrast, movement in the presence of Lis1 was slow and
+exhibited distinct steps, with pauses (‘‘dwells’’)
+intervening
+between abrupt forward and occasional backward displace-
+ments (Figure 4B, red traces). This Lis1-induced stepping
+behavior is reminiscent of free dynein in 1 mM ATP, in which
+the stepping rate is limited by the rate of ATP binding (Figure 4B,
+blue trace). The dynein step size distribution in the presence of
+1 mM ATP and Lis1 (Figure S3C) was similar to that previously
+reported for dynein alone at low ATP concentration (Reck-
+Peterson et al., 2006). Occasional larger displacements in the
+
+980 Cell 150, 975–986, August 31, 2012 ª2012 Elsevier Inc.
+
+Lis1 traces may correspond to ‘‘bursts’’ of multiple rapid steps
+at the rate observed for free dynein in 1 mM ATP (Figure 4B,
+green trace) and could reﬂect Lis1 dissociation events.
+In
+summary, we conclude that the slow movement of dynein/Lis1
+is not due to smaller forward steps or more frequent back steps
+(Figure S3C); rather, it is accounted for by longer dwells between
+steps.
+Most frequently, dynein/Lis1 paused for 1 s between steps
+(Figure 4C), and longer dwells lasting up to 15 s can be seen in
+the traces (Figure 4B, asterisk). For comparison, the average
+duration of an ATP turnover in steady-state assays was 0.1 s
+(Figure 3B). The dwells we observe between individual steps in
+the presence of Lis1 may be related to the pauses previously
+seen between longer movements in mammalian dynein (see Fig-
+ure S3 of McKenney et al., 2010). During Lis1-induced pauses,
+the displacement ﬂuctuations of the Qdot were equivalent to
+those seen for dynein alone while tightly bound to the micro-
+tubule waiting for ATP to bind (in each case, SD = ±4 nm).
+Together, these results show that Lis1 causes dynein to remain
+tightly attached to the microtubule for typically more than
+a second in high concentrations of ATP. This is a pronounced
+change from dynein’s canonical stepping pattern.
+
+Lis1 Binds Between Dynein’s Microtubule-Binding
+and ATPase Domains at AAA3/4
+We next explored the structural basis for the striking effects of
+Lis1 on dynein’s mechanochemistry. Using size-exclusion
+chromatography, we were able to purify the complex of GST-
+dynein331 kDa and Lis1 in buffer supplemented with ATP + Vi,
+ATP, or no added nucleotide (Figures 5A and 5B). Complex
+formation was evident from the coelution of dynein and Lis1
+(Figures 5A, blue arrow, and 5B) and depletion of free Lis1
+(Figure 5A, gray arrow). This differs from a previous report in
+which interactions were detected in the presence of ATP + Vi
+(thought to trap the prepowerstroke state of dynein) but not in
+nucleotide-free conditions (McKenney et al., 2010). It may be
+that Lis1 afﬁnity in the no-nucleotide state is stronger with
+dimeric, yeast dynein compared with the monomeric, mamma-
+lian dynein construct used in earlier work. We used electron
+microscopy (EM) to investigate structural differences between
+the free dynein and dynein/Lis1 fractions in the absence of
+nucleotide, allowing direct comparison with the yeast motor
+domain crystal structure (Schmidt et al., 2012) obtained in the
+same state.
+
+Figure 5C shows negative-stain EM images of GST-
+dynein331 kDa both alone and bound to Lis1. Molecules from
+the two samples have the same general form, with the paired
+motor domains adopting a range of relative orientations about
+the GST moiety. However, the two motor domains are slightly
+closer and less variably spaced in the presence of Lis1 (Fig-
+ure 5D), suggesting that Lis1 might bind between them (see
+Figure S4A).
+
+We next mapped the Lis1 binding site on dynein using single-
+particle image processing. Images of individual motor domains
+were extracted from the dimer micrographs, aligned, classiﬁed
+into similar groups, and averaged, revealing a range of molecular
+views in the data sets. The two main views of the motor domain
+are close to those previously seen in other dyneins (Figures 5E
+
+Figure 5. Puriﬁcation and Structure of the
+Dynein/Lis1 Complex
+(A) Puriﬁcation of the dynein/Lis1 complex by
+size-exclusion chromatography. Traces show the
+elution proﬁles of Lis1 (green), GST-dynein331 kDa
+(red), and a mixture of both proteins (blue) in ATP +
+Vi buffer conditions. Complex formation is indi-
+cated by the coelution of dynein and Lis1 (blue
+arrow) and depletion of free Lis1 (gray arrow).
+Elution volumes of standards with known Stokes
+(RS) and the void volume (V0) are shown
+radii
+above.
+(B) SDS-PAGE of size-exclusion chromatography
+fractions, colored as in (A). GST-dynein331 kDa and
+Lis1 coelute in a complex (blue bands) in ATP + Vi
+buffer conditions (main panel) as well as in ATP
+and no-nucleotide conditions (lower right: peak
+fractions).
+(C) Negative-stain
+
+dynein331 kDa alone (  Lis1) and bound to Lis1
+
+EM images
+
+of GST-
+
+(+ Lis1). Examples of paired motor domains are
+outlined in white. The scale bar represents 50 nm.
+(D) Histogram showing motor-motor separation
+distances for dynein dimers alone (dark gray) or
+bound to Lis1 (light gray). Each distribution is ﬁt
+with a Gaussian (R2 values of 0.9443 and 0.9830,
+respectively). Motor-motor separation of dynein
+alone is 21.0 ± 0.2 nm (± error of the ﬁt) and the SD
+is 3.1 ± 0.2 nm (n = 854). In the presence of Lis1,
+the motor-motor separation is 19.3 ± 0.1 nm and
+the SD is 2.1 ± 0.1 nm (n = 1067). The motor-motor
+separation is signiﬁcantly reduced in the presence
+of Lis1 (p < 0.0001, Welch t test), and the variation
+in motor-motor spacing is signiﬁcantly smaller
+(p < 0.0001, f test).
+(E and F) Analysis of the Lis1 binding site on
+dynein. The two main views of the dynein motor
+domain following single-particle analysis are
+shown (top view [E] and right view [F]). In each
+case,
+row shows an average of
+the dynein/Lis1 complex (left panel), dynein alone
+(middle panel), and the difference map between
+these images overlaid on the dynein average (right panel). Differences are shown at 4s above the mean and colored according to the chart. Prominent extra
+density in the dynein/Lis1 complex is indicated (arrowhead in E). The window width corresponds to 26.4 nm. Lower: the difference peak overlaid on the cor-
+responding view of the yeast dynein motor domain crystal structure (PDB 4AKI; Schmidt et al., 2012), as determined by projection matching (see Figures S4B and
+S4C). The stalk, linker, AAA+ modules (1–6), and C-terminal region (C) are indicated. Insets show class averages revealing the full length of the stalk and
+microtubule-binding domain at its tip, which are truncated in the crystal structure.
+
+the upper
+
+and 5F; Burgess et al., 2003; Roberts et al., 2009). Detail was
+sufﬁcient to match these views unambiguously to orientations
+of the yeast dynein crystal structure (Figures S4B and S4C).
+Both the coiled-coil stalk and the microtubule-binding domain
+at its tip are also resolved in class averages (Figures 5E and
+5F, insets), further aiding interpretation of the images.
+
+In the presence of Lis1, there is a pronounced extra density on
+the margin of dynein’s motor domain, near the emergence of the
+stalk (Figure 5E, arrowhead). This observation is quantiﬁed in
+a difference map, where the additional density gives rise to
+a strong difference peak (Figure 5E, right panel). Analysis of
+the second main view (Figure 5F) yields a difference peak in
+the same position. This extra Lis1 density in both views overlaps
+with AAA3/4 (Figures 5E and 5F, lower; Figures S4B–S4E). We
+detect no signiﬁcant density changes near AAA1 in the presence
+
+of Lis1, contrary to earlier reports that Lis1 binds AAA1 (Sasaki
+et al., 2000; Tai et al., 2002).
+
+To determine whether Lis1 binding at AAA3/4 is responsible
+for regulating dynein motility, we mutated a series of highly
+conserved, charged amino acids in dynein at this putative inter-
+face (Figures 6A and S5A). Whereas these mutations had little or
+no effect on dynein’s intrinsic motility, Lis1-induced velocity
+reduction was impaired by a single point mutation (K2721E)
+and nearly abolished by a quadruple substitution (K2721A,
+D2725G, E2726S, and E2727G) near the AAA3/4 junction (Fig-
+ure 6B). These four mutations also virtually abolished Lis1
+binding in a gel ﬁltration experiment (Figures S5B and S5C).
+Furthermore, in living yeast cells, the quadruple substitution
+produced a nuclear segregation phenotype indistinguishable
+from that caused by Lis1 deletion (Figure 6C). Thus, we conclude
+
+Cell 150, 975–986, August 31, 2012 ª2012 Elsevier Inc. 981
+
+A
+
+4
+
+3
+
+D
+
+60°
+
+B
+
+)
+s
+/
+m
+n
+(
+y
+t
+i
+c
+o
+e
+v
+
+l
+
+150
+
+100
+
+50
+
+0
+
+E
+
+GST-dynein331 kDa
+GST-dyneinK
+GST-dyneinKDEE
+
+C
+
+s
+
+l
+l
+
+t
+
+e
+c
+e
+a
+e
+c
+u
+n
+b
+
+l
+
+i
+
+t
+
+n
+a
+r
+r
+e
+b
+a
+%
+
+0
+
+50
+100
+[Lis1] (nM)
+
+150
+
+40
+
+30
+
+20
+
+10
+
+0
+
+dyneinKDEE
+dyneinK
+WT
+
+dynein
+Lis1
+
+GST-dynein331 kDa
+
+Lis1
+
+-
+
+GST-dyneinR2911C
+
+-
+
+GST-dynein331 kDa
+
++
+
+e
+m
+
+i
+t
+
+60 s
+
+5 μm
+
+126 ± 62.8
+
+5.2 ± 3.7
+
+10.2 ± 3.4
+
+velocity (mean ± SD, nm/s)
+
+Figure 6. Mutational Analysis of the Lis1
+Binding Site and Intersubunit Communica-
+tion at AAA3/4
+(A) Close-up view of
+the putative Lis1/dynein
+interface at AAA3 (green) and AAA4 (yellow). The
+Lis1 difference peak is shown with a dotted
+outline, overlaid on the yeast dynein crystal
+structure (PDB 4AKH; Schmidt et al., 2012). Red
+spheres depict four highly conserved amino acids
+(K2721, D2725, E2726, and E2727) chosen for
+mutagenesis. See also Figure S5A. The entire
+dynein motor domain is shown in the inset below
+for reference.
+(B) Mutation of a single amino acid (K2721E;
+GST-dyneinK)
+in the ﬁrst helix of AAA4 in
+dynein impairs Lis1-mediated velocity reduction,
+which is virtually abolished by a quadruple
+and
+mutation
+E2727G; GST-dyneinKDEE). Data
+for GST-
+kDa and GST-dyneinK were ﬁt as
+dynein331
+described in Figure 1G. For GST-dynein331 kDa:
+R2 = 0.9962; V0 = 102.2 ± 1.681 nm/s, Fmax =
+0.825 ± 0.028, and K1/2 = 15.68 ± 2.85 nM.
+For GST-dyneinK: R2 = 0.9406; V0 = 112.6 ±
+6.155 nm/s, Fmax = 0.825 ± 0.068, and K1/2 =
+52.18 ± 16.78 nM. Data points from two inde-
+pendent experiments are shown (open and
+closed circles; n > 203 per data point; see also
+Table S2C).
+(C) Quadruple mutation in the ﬁrst helix of
+AAA4 causes an aberrant binucleate phenotype
+highly similar to loss of Lis1 (Lis1D). The mean and
+SE of proportion are shown (n > 405 per data
+
+(K2721A, D2725G, E2726S,
+
+point). WT dynein (WT) and dynein with mutation(s) K2721E (dyneinK) or K2721A, D2725G, E2726S, and E2727G (dyneinKDEE) are indicated.
+(D) Close-up view of the AAA4 arginine ﬁnger (R2911; red sticks) that reaches into the nucleotide-binding pocket of AAA3. Nucleotide (AMP-PNP) bound in AAA3
+is shown in black stick representation (PDB 4AKH; Schmidt et al., 2012).
+(E) Kymographs of single-molecule motility of TMR-labeled GST-dyneinR2911C on microtubules. The mean velocity for each condition is shown below (n > 162).
+GST-dynein331 kDa motility in the presence of buffer ( ) or 600 nM Lis1 (+) is shown for comparison. See Figure S5D for in vivo characterization of the R2911C
+
+mutation.
+
+that Lis1 engages dynein at AAA3/4, near the interface between
+its catalytic ring and microtubule-binding stalk.
+
+Mutation of Dynein’s AAA4 ‘‘Arginine Finger’’ Mimics the
+Lis1 Effect at the Single-Molecule Level
+A pre-existing clue to the involvement of AAA3/4 in Lis1’s mech-
+anism comes from genetic studies in Aspergillus nidulans. In this
+ﬁlamentous fungus, a single Arg/Cys mutation within AAA4 can
+partially suppress the phenotype associated with deletion or
+mutation of the Lis1 gene (nudF) (Zhuang et al., 2007). On close
+inspection, this residue is a strong candidate to form the ‘‘argi-
+nine ﬁnger’’ motif of AAA4. By analogy to related ring-shaped
+AAA+ ATPases, this motif is expected to reach from AAA4 into
+the adjacent nucleotide-binding pocket of AAA3 and help trans-
+mit structural changes around the ring (Figure 6D; Erzberger and
+Berger, 2006; Kon et al., 2012; Schmidt et al., 2012). To investi-
+gate the role of AAA4’s arginine ﬁnger and the consequences of
+the suppressor mutation, we engineered the equivalent mutation
+(R2911C) in S. cerevisiae dynein. In single-molecule assays,
+GST-dyneinR2911C retained the ability to bind to and move
+along microtubules. However, its mean velocity was slowed to
+5 nm/s, and its microtubule encounters were extended in
+time compared with the parental construct with an intact AAA4
+
+982 Cell 150, 975–986, August 31, 2012 ª2012 Elsevier Inc.
+
+arginine ﬁnger (Figure 6E). Strikingly, these properties of the
+mutant closely resemble dynein behavior in saturating Lis1
+concentrations (Figure 6E). As expected, the Lis1D phenotype
+in S. cerevisiae is not rescued by the arginine ﬁnger mutation
+(Figure S5D), because here Lis1 is also required for proper
+dynein localization (Lee et al., 2003; Markus et al., 2009; Shee-
+man et al., 2003). By contrast, in A. nidulans, this mutation
+partially bypasses the need for Lis1, likely because dynein local-
+ization is less dependent on Lis1 in these cells (Zhang et al.,
+2002). In summary, mutating the arginine ﬁnger motif of AAA4
+confers motile properties similar to those produced by Lis1;
+moreover, the same mutation can in part circumvent the require-
+ment for Lis1 in A. nidulans (Zhuang et al., 2007).
+
+DISCUSSION
+
+Our single-molecule and ensemble data illuminate the mecha-
+nism by which Lis1 alters cytoplasmic dynein’s mechanical
+behavior and assists in its wealth of cellular functions. Based
+on these ﬁndings, models for Lis1’s mechanism must take the
+following observations into account. First, Lis1 converts single
+dynein molecules to a microtubule-attached state in a dose-
+dependent fashion, bringing dynein to a virtual standstill at
+
+persist within the ring, the microtubule-binding domain at the
+tip of the stalk retains a strong-binding conformation. As a conse-
+quence, the ‘‘duty ratio’’ of the motor (i.e., the fraction of the
+catalytic cycle spent tightly attached to the track) approaches
+unity. From a kinetic standpoint, the microtubule off-rate of the
+motor domain following ATP binding is dramatically slowed,
+consistent with enhanced microtubule afﬁnity in the ADP-Vi state
+(McKenney et al., 2010). Although the results here show that the
+dynein-Lis1 complex can be puriﬁed in a variety of nucleotide
+states, our data do not exclude nucleotide-dependent changes
+in dynein-Lis1 afﬁnity (McKenney et al., 2010); indeed, we think
+changes in afﬁnity are likely as dynein’s ring structure ﬂexes
+during the ATPase cycle. Interestingly, aspects of Lis1’s effects
+(e.g., constitutively strong microtubule binding and activated
+ATPase) have been achieved by locking the helices of the stalk’s
+coiled coil
+in a deﬁned alignment by crosslinking (Kon et al.,
+2009). Collectively, these results suggest that Lis1 may affect
+the mobility of the helices in dynein’s coiled-coil stalk using
+a unique allosteric mechanism involving binding near the stalk’s
+base.
+
+The Role of AAA3/4 in Lis1 Interactions and Dynein
+Motility
+Our structural data, showing that Lis1 binds dynein at AAA3/4
+near the interface between its ATP-hydrolyzing ring and microtu-
+bule-binding stalk, provide an explanation for how communica-
+tion between these elements can be regulated. This is in contrast
+to an earlier report based on interactions between overex-
+pressed fragments of each protein that suggested that Lis1
+binds AAA1 (Sasaki et al., 2000; Tai et al., 2002). Our functional
+studies also support a role for AAA3/4 being the site of Lis1
+interaction; mutation of four charged amino acids in AAA4’s
+N-terminal helix severely impairs Lis1 binding, renders dynein
+nearly completely insensitive to Lis1 in motility assays, and phe-
+nocopies a Lis1 null allele in living cells. Furthermore, these
+charged amino acids are highly conserved in available cyto-
+plasmic dynein sequences (Figure S5A), suggesting that binding
+at AAA3/4 is likely to be a common feature of Lis1-dynein inter-
+actions. A notable exception to this pattern of conservation is
+found in Schizosaccharomyces pombe, which lacks an obvious
+Lis1 ortholog. The AAA3/4 binding site also provides a simple
+explanation for why the Lis1-dynein afﬁnity is sensitive to the
+‘‘neck’’ region of dynein’s tail (Markus and Lee, 2011; Markus
+et al., 2009), as these domains are closely apposed (Burgess
+et al., 2003; Roberts et al., 2012).
+
+Although the ATP-driven domain motions within dynein’s ring
+have not yet been delineated, our data and recent structural
+studies (Kon et al., 2012; Schmidt et al., 2012) suggest that an
+‘‘arginine ﬁnger’’ motif, reaching from AAA4 into the catalytic
+pocket of AAA3, contributes to the normal function of cyto-
+plasmic dynein’s ring. Our functional studies also show that
+mutation of this AAA4 arginine ﬁnger mimics aspects of Lis1’s
+impact on dynein motility. Based on comparisons with related
+ring-shaped AAA+ machines, this motif is expected to be impor-
+tant for the hydrolysis of ATP at AAA3 and/or the transmission of
+structural changes from AAA3 to AAA4 (Erzberger and Berger,
+2006). Consistent with this, the motile properties that we observe
+in the AAA4 arginine ﬁnger mutant closely resemble those of
+
+Cell 150, 975–986, August 31, 2012 ª2012 Elsevier Inc. 983
+
+Figure 7. Model for Dynein Motility Regulation by Lis1
+(A and B) Model of a canonical dynein step (A) and Lis1-mediated motility
+regulation (B). See main text for details. For clarity, only one Lis1 b-propeller
+domain and one dynein heavy chain are shown (both are dimers), and dynein’s
+C-terminal region, which lies on the near face of the ring, is omitted. S.c.,
+S. cerevisiae.
+
+a monomeric
+
+concentrations. Second,
+
+saturating
+Lis1
+b-propeller domain, acting on a single dynein motor domain,
+can elicit these effects. Third, Lis1 alters dynein’s mechano-
+chemical coupling: with Lis1 bound, dynein’s motor domain
+can remain attached to the microtubule in physiological ATP
+concentrations, even while undergoing multiple rounds of hydro-
+lysis. This indicates that Lis1 can alter communication between
+dynein’s ATP hydrolyzing ring and its microtubule-binding stalk.
+Fourth, Lis1 engages dynein close to the interface between
+these elements, at AAA3/4.
+
+A ‘‘Clutch’’ Model for Lis1’s Mechanism
+We bring these observations and previous results together into
+a model for Lis1’s mechanism of action (Figure 7). We ﬁrst
+consider a canonical
+(Lis1-free) dynein stepping cycle that
+begins with the binding of ATP at dynein’s main hydrolytic site
+(AAA1; Figure 7A, blue). This initiates motions of AAA+ subdo-
+mains within the ring, which are translated into sliding between
+the a helices of the coiled-coil stalk. In turn, the afﬁnity of the
+microtubule-binding domain at the stalk’s tip is weakened; it
+rapidly detaches from the microtubule and then undergoes
+a diffusive search for a new binding site.
+
+The main concept of our model is that when Lis1 binds via its
+b-propeller domain to dynein’s ring at AAA3/4, the ﬂow of struc-
+tural changes from the ring to the stalk is severed (Figure 7B).
+This function of Lis1 is reminiscent of a ‘‘clutch’’ that alters trans-
+mission between dynein’s AAA+ ‘‘engine’’ and its track-binding
+region. Thus, while cycles of ATP binding and hydrolysis can
+
+mutants with disrupted ATP binding/hydrolysis motifs in AAA3
+(Cho et al., 2008; Kon et al., 2004). An important mechanistic
+distinction between the AAA4 arginine ﬁnger mutant and Lis1
+is that the mutation appears to substantially reduce ATPase
+turnover (Zhuang et al., 2007), whereas Lis1 does not. A possible
+role of ATP hydrolysis in the dynein-Lis1 complex is to keep the
+system dynamic and therefore adaptable (see below). Because
+AAA1 is the principal ATPase site in dynein’s ring, AAA3 and
+AAA4 have previously been referred to as ‘‘regulatory’’ AAA+
+modules. Here we show that not only do AAA3 and AAA4 regu-
+late the motions within dynein’s ring, but they also form the
+binding site for Lis1, a ubiquitous cytoplasmic dynein regulator.
+
+The Functional Role of Nudel
+We found that Nudel allowed Lis1 to act on dynein at lower
+concentrations in our single-molecule experiments. This
+supports a tethering role for Nudel, in which it attaches to
+dynein’s tail
+(via the intermediate chain of dynein) with one
+end of its coiled coil and binds to Lis1 with the other (Feng
+et al., 2000; McKenney et al., 2010; Niethammer et al., 2000;
+Sasaki et al., 2000; Tarricone et al., 2004; Wang and Zheng,
+_Zylkiewicz et al., 2011), thus increasing Lis1’s effective
+2011;
+concentration. However, evidence suggests that within Nudel’s
+tethering role exist additional regulatory layers. For example, an
+intriguing property of puriﬁed mammalian NudE/Nudel proteins
+is to suppress Lis1’s effects on unloaded dynein (Torisawa
+et al., 2011; Yamada et al., 2008) while still enabling Lis1 to
+prolong dynein’s microtubule attachments under force (McKen-
+ney et al., 2010). One possibility here is that Nudel positions Lis1
+such that it engages AAA3/4 when dynein is strained. This
+would allow dynein/Lis1/Nudel to move rapidly until a high
+load is encountered, at which point Lis1 would engage and
+resist microtubule detachment. This differs from our results
+from S. cerevisiae, in which Nudel enhanced Lis1’s effects on
+dynein even in unloaded conditions. Therefore, the load-depen-
+dent behavior of dynein, Lis1, and Nudel may vary among
+species or as a function of posttranslational modiﬁcation.
+
+Biological Implications
+Lis1 has been proposed to facilitate two general steps in the
+cytoplasmic dynein pathway: preparing dynein for transport
+and allowing dynein to move large, high-load cargos. Our model
+(Figure 7) provides a plausible mechanism for both types of Lis1
+function and also identiﬁes additional possible roles for dynein/
+Lis1 in living cells. A common theme in these functions is that
+by acting as a molecular clutch, Lis1 prolongs dynein’s attach-
+ments to microtubules.
+
+An initial step in many dynein-mediated transport events is the
+targeting of dynein to the plus ends of microtubules, which grow
+and shrink near the cell periphery (Kardon and Vale, 2009). Here,
+dynein is thought to be loaded with cargo before transporting
+these cargo molecules toward the microtubule minus end. In
+cells, Lis1 is also concentrated at microtubule plus ends and
+can be targeted there either in complex with dynein (as in
+S. cerevisiae and possibly mammalian cells) or separately (as
+in A. nidulans and Ustilago maydis; Lee et al., 2003; Lenz et al.,
+2006; Sheeman et al., 2003; Yamada et al., 2008; Zhang et al.,
+2002). In either scenario, our data indicate that binding of Lis1
+
+984 Cell 150, 975–986, August 31, 2012 ª2012 Elsevier Inc.
+
+to dynein at the microtubule plus end will bias dynein toward
+a microtubule-attached state. This could increase dynein’s resi-
+dence time at the microtubule plus end, assist in the kinetics of
+cargo loading, and/or form the starting conﬁguration for motility
+toward the minus end. By binding near the neck region of
+dynein’s tail, Lis1 may also be involved in ‘‘unmasking’’ the tail
+to promote interactions with cargo (Egan et al., 2012; Lenz
+et al., 2006; Markus and Lee, 2011; Markus et al., 2009).
+
+In S. cerevisiae, the cue for transferring dynein onto its cargo
+protein could also involve the controlled assembly of dynein
+with the dynactin complex (Markus and Lee, 2011; Markus
+et al., 2009; Woodruff et al., 2009). Formation of the dynein/
+dynactin complex may help displace Lis1 and Nudel (McKenney
+et al., 2011) and convert dynein from a strongly microtubule-
+attached state (with Lis1 bound) to a rapidly moving processive
+state (with dynactin bound).
+
+A second, more recently proposed role of Lis1 is to adapt
+dynein for tasks involving high loads, such as transporting and
+exerting tension on large organelles and cellular structures
+(McKenney et al., 2010). By binding near the base of dynein’s
+microtubule-binding stalk and causing it to resist detachment,
+Lis1 appears ideally suited to facilitate dynein’s tension-bearing
+roles. It remains to be seen whether the ATP-driven movements
+of dynein’s mechanical element (the ‘‘linker’’) persist with Lis1
+bound (Burgess et al., 2003; Kon et al., 2005; Roberts et al.,
+2009, 2012).
+If so, this might allow dynein/Lis1 to perform
+repeated ‘‘tugs’’ on cargo while attached to the microtubule,
+thereby maintaining tension. Alternatively, Lis1 might regulate
+the linker domain’s motions, as the distal end of the linker
+lies in close proximity to the Lis1 binding site at AAA3/4 (Fig-
+ure S4E). The impressive duration of dynein’s microtubule
+attachments in the presence of Lis1 also provides clues to addi-
+tional possible functions in vivo. A subset of macromolecules
+and organelles,
+including mRNAs and the Golgi apparatus,
+appears to require dynein for retention at speciﬁc sites in the
+cytoplasm (Delanoue and Davis, 2005; Ding et al., 2009; Lam
+et al., 2010). An idea compatible with our data is that tension-
+bearing dynein/Lis1 complexes are responsible for anchoring
+these cargos in place.
+
+An important question is how Lis1 might assist in the rapid,
+dynein-driven transport of large organelles, as was recently re-
+ported in neuronal cells (Pandey and Smith, 2011; Yi et al.,
+2011). Given that the velocity of these movements (300 nm/s)
+exceeds those expected from dynein in saturating Lis1 con-
+centrations (Yamada et al., 2008), one possibility is that Lis1 is
+substoichiometrically associated with dynein on such cargos.
+Alternatives include Lis1 allowing the summation of multiple indi-
+vidual dynein forces (McKenney et al., 2010), and Nudel modu-
+lating the dynein-Lis1 interaction in a load-sensitive manner.
+Quantifying the endogenous copy number of dynein, Lis1, and
+Nudel on these cargos by live-cell imaging would help distin-
+guish among these possibilities.
+
+In the other classes of cytoskeletal motors, different motile
+properties have been achieved by gene duplication and diver-
+gent evolution. In the case of cytoplasmic dynein, our results
+reveal that Lis1 can generate mechanical diversity by regulating
+the structural changes that propagate through dynein’s large
+motor domain.
+
+EXPERIMENTAL PROCEDURES
+
+Protein Expression, Puriﬁcation, and Labeling
+The S. cerevisiae strains used in this study are listed in Table S1. Dynein
+constructs were puriﬁed and labeled essentially as described previously
+(Reck-Peterson et al., 2006). For modiﬁcations and details of the Lis1 and
+Nudel puriﬁcations, see Extended Experimental Procedures. Protein concen-
+trations were determined by comparisons with standards using Bradford
+protein assays or SDS-PAGE with SYPRO Red (Invitrogen) staining. All protein
+concentrations (dynein, Lis1, Nudel, and a/b-tubulin) are expressed for the
+dimer, with the exception of Lis1DN, for which the monomer concentration is
+given.
+
+Single-Molecule Microscopy and ATPase Assays
+Assays are described in detail
+in the Extended Experimental Procedures.
+Brieﬂy, motility assays were assembled using ﬂow chambers, and ﬂuores-
+cently labeled dynein molecules and microtubules were visualized by TIRF
+microscopy (Qiu et al., 2012; Reck-Peterson et al., 2006). Microtubule-
+activated ATPase assays were performed using the EnzChek phosphatase
+kit (Molecular Probes; Cho et al., 2008; Reck-Peterson et al., 2006).
+
+
+
+Size-Exclusion Chromatography and EM
+GST-dynein331 kDa (350–400 nM), Lis1 (700–800 nM), or a mixture of both
+C under the indicated nucleotide
+proteins was preincubated for 10 min at 4
+conditions (200 mM Mg-ATP + 200 mM sodium vanadate, 200 mM Mg-ATP
+alone, or no added nucleotide). Samples were fractionated on a Superose 6
+PC 3.2/30 column equilibrated with buffer and nucleotide as required. For
+negative-stain EM, peak fractions were stained with 1% uranyl formate and
+imaged using a Tecnai G2 Spirit microscope, as detailed in the Extended
+Experimental Procedures.
+
+SUPPLEMENTAL INFORMATION
+
+Supplemental Information includes Extended Experimental Procedures, ﬁve
+ﬁgures, and two tables and can be found with this article online at http://dx.
+doi.org/10.1016/j.cell.2012.07.022.
+
+ACKNOWLEDGMENTS
+
+We thank Andrew P. Carter, Peter J. Knight, Tom A. Rapoport, James R.
+Sellers, Katerina Toropova, and Xin Xiang for critical comments on the manu-
+script; the Nikon Imaging Center at Harvard Medical School for technical
+assistance; Priscilla Yang’s lab for sharing equipment; Stephen Hinshaw for
+initial experiments and suggesting the clutch analogy; Weihong Qiu for initial
+experiments; Brian Goodman for kinesin; and the Reck-Peterson lab for
+support. A.J.R. is funded by a Sir Henry Wellcome Postdoctoral Fellowship
+(092436/Z/10/Z) sponsored by Peter J. Knight and Stan A. Burgess (University
+of Leeds). A.E.L. is funded in part by a research fellowship from the Alfred P.
+Sloan Foundation. S.R.-P. is funded by the Rita Allen Foundation, the Giovanni
+Armenise-Harvard Foundation, and a National Institutes of Health New Inno-
+vator award (1 DP2 OD004268-01).
+
+Received: January 29, 2012
+Revised: April 23, 2012
+Accepted: July 10, 2012
+Published: August 30, 2012
+
+REFERENCES
+
+Allan, V.J. (2011). Cytoplasmic dynein. Biochem. Soc. Trans. 39, 1169–1178.
+
+Burgess, S.A., Walker, M.L., Sakakibara, H., Knight, P.J., and Oiwa, K. (2003).
+Dynein structure and power stroke. Nature 421, 715–718.
+
+Cho, C., and Vale, R.D. (2012). The mechanism of dynein motility: insight
+from crystal structures of the motor domain. Biochim. Biophys. Acta 1823,
+182–191.
+
+Cho, C., Reck-Peterson, S.L., and Vale, R.D. (2008). Regulatory ATPase sites
+of cytoplasmic dynein affect processivity and force generation. J. Biol. Chem.
+283, 25839–25845.
+
+Delanoue, R., and Davis, I. (2005). Dynein anchors its mRNA cargo after apical
+transport in the Drosophila blastoderm embryo. Cell 122, 97–106.
+
+Ding, C., Liang, X., Ma, L., Yuan, X., and Zhu, X. (2009). Opposing effects of
+Ndel1 and alpha1 or alpha2 on cytoplasmic dynein through competitive
+binding to Lis1. J. Cell Sci. 122, 2820–2827.
+
+Eﬁmov, V.P. (2003). Roles of NUDE and NUDF proteins of Aspergillus nidulans:
+insights from intracellular localization and overexpression effects. Mol. Biol.
+Cell 14, 871–888.
+
+Egan, M.J., Tan, K., and Reck-Peterson, S.L. (2012). Lis1 is an initiation factor
+for dynein-driven organelle transport. J. Cell Biol. 197, 971–982.
+
+Erzberger, J.P., and Berger, J.M. (2006). Evolutionary relationships and struc-
+tural mechanisms of AAA+ proteins. Annu. Rev. Biophys. Biomol. Struct. 35,
+93–114.
+
+Faulkner, N.E., Dujardin, D.L., Tai, C.Y., Vaughan, K.T., O’Connell, C.B., Wang,
+Y., and Vallee, R.B. (2000). A role for the lissencephaly gene LIS1 in mitosis and
+cytoplasmic dynein function. Nat. Cell Biol. 2, 784–791.
+
+Feng, Y., Olson, E.C., Stukenberg, P.T., Flanagan, L.A., Kirschner, M.W., and
+Walsh, C.A. (2000). LIS1 regulates CNS lamination by interacting with mNudE,
+a central component of the centrosome. Neuron 28, 665–679.
+
+Gerdes, J.M., and Katsanis, N.
+neurological and ciliary disease. Cell. Mol. Life Sci. 62, 1556–1570.
+
+(2005). Microtubule transport defects in
+
+I.R., Gibbons, B.H., Mocz, G., and Asai, D.J.
+
+Gibbons,
+(1991). Multiple
+nucleotide-binding sites in the sequence of dynein beta heavy chain. Nature
+352, 640–643.
+
+Imamula, K., Kon, T., Ohkura, R., and Sutoh, K. (2007). The coordination of
+cyclic microtubule association/dissociation and tail swing of cytoplasmic
+dynein. Proc. Natl. Acad. Sci. USA 104, 16134–16139.
+
+Kardon, J.R., and Vale, R.D. (2009). Regulators of the cytoplasmic dynein
+motor. Nat. Rev. Mol. Cell Biol. 10, 854–865.
+
+Karki, S., and Holzbaur, E.L. (1999). Cytoplasmic dynein and dynactin in cell
+division and intracellular transport. Curr. Opin. Cell Biol. 11, 45–53.
+
+Kon, T., Nishiura, M., Ohkura, R., Toyoshima, Y.Y., and Sutoh, K. (2004).
+Distinct functions of nucleotide-binding/hydrolysis sites in the four AAA
+modules of cytoplasmic dynein. Biochemistry 43, 11266–11274.
+
+Kon, T., Mogami, T., Ohkura, R., Nishiura, M., and Sutoh, K. (2005). ATP hydro-
+lysis cycle-dependent tail motions in cytoplasmic dynein. Nat. Struct. Mol.
+Biol. 12, 513–519.
+
+Kon, T., Imamula, K., Roberts, A.J., Ohkura, R., Knight, P.J., Gibbons, I.R.,
+Burgess, S.A., and Sutoh, K. (2009). Helix sliding in the stalk coiled coil of
+dynein couples ATPase and microtubule binding. Nat. Struct. Mol. Biol. 16,
+325–333.
+
+Kon, T., Oyama, T., Shimo-Kon, R., Imamula, K., Shima, T., Sutoh, K., and
+Kurisu, G. (2012). The 2.8 A˚ crystal structure of the dynein motor domain.
+Nature 484, 345–350.
+
+Lam, C., Vergnolle, M.A., Thorpe, L., Woodman, P.G., and Allan, V.J. (2010).
+Functional interplay between LIS1, NDE1 and NDEL1 in dynein-dependent
+organelle positioning. J. Cell Sci. 123, 202–212.
+
+Lee, W.L., Oberle, J.R., and Cooper, J.A. (2003). The role of the lissencephaly
+protein Pac1 during nuclear migration in budding yeast. J. Cell Biol. 160,
+355–364.
+
+Lenz, J.H., Schuchardt, I., Straube, A., and Steinberg, G. (2006). A dynein
+loading zone for retrograde endosome motility at microtubule plus-ends.
+EMBO J. 25, 2275–2286.
+
+Li, J., Lee, W.L., and Cooper, J.A. (2005). NudEL targets dynein to microtubule
+ends through LIS1. Nat. Cell Biol. 7, 686–690.
+
+Markus, S.M., and Lee, W.L. (2011). Regulated ofﬂoading of cytoplasmic
+dynein from microtubule plus ends to the cortex. Dev. Cell 20, 639–651.
+
+Cell 150, 975–986, August 31, 2012 ª2012 Elsevier Inc. 985
+
+Markus, S.M., Punch, J.J., and Lee, W.L. (2009). Motor- and tail-dependent
+targeting of dynein to microtubule plus ends and the cell cortex. Curr. Biol.
+19, 196–205.
+
+Smith, D.S., Niethammer, M., Ayala, R., Zhou, Y., Gambello, M.J., Wynshaw-
+Boris, A., and Tsai, L.H. (2000). Regulation of cytoplasmic dynein behaviour
+and microtubule organization by mammalian Lis1. Nat. Cell Biol. 2, 767–775.
+
+McKenney, R.J., Vershinin, M., Kunwar, A., Vallee, R.B., and Gross, S.P.
+(2010). LIS1 and NudE induce a persistent dynein force-producing state.
+Cell 141, 304–314.
+
+Tai, C.Y., Dujardin, D.L., Faulkner, N.E., and Vallee, R.B. (2002). Role of dynein,
+dynactin, and CLIP-170 interactions in LIS1 kinetochore function. J. Cell Biol.
+156, 959–968.
+
+McKenney, R.J., Weil, S.J., Scherer, J., and Vallee, R.B. (2011). Mutually
+exclusive cytoplasmic dynein regulation by NudE-Lis1 and dynactin. J. Biol.
+Chem. 286, 39615–39622.
+
+Mesngon, M.T., Tarricone, C., Hebbar, S., Guillotte, A.M., Schmitt, E.W.,
+Lanier, L., Musacchio, A., King, S.J., and Smith, D.S. (2006). Regulation of
+cytoplasmic dynein ATPase by Lis1. J. Neurosci. 26, 2132–2139.
+
+Neuwald, A.F., Aravind, L., Spouge, J.L., and Koonin, E.V. (1999). AAA+:
+a class of chaperone-like ATPases associated with the assembly, operation,
+and disassembly of protein complexes. Genome Res. 9, 27–43.
+
+Niethammer, M., Smith, D.S., Ayala, R., Peng, J., Ko, J., Lee, M.S., Morabito,
+M., and Tsai, L.H. (2000). NUDEL is a novel Cdk5 substrate that associates
+with LIS1 and cytoplasmic dynein. Neuron 28, 697–711.
+
+Tanaka, T., Serneo, F.F., Higgins, C., Gambello, M.J., Wynshaw-Boris, A., and
+Gleeson, J.G. (2004). Lis1 and doublecortin function with dynein to mediate
+coupling of the nucleus to the centrosome in neuronal migration. J. Cell Biol.
+165, 709–721.
+
+Tarricone, C., Perrina, F., Monzani, S., Massimiliano, L., Kim, M.H.,
+Derewenda, Z.S., Knapp, S., Tsai, L.H., and Musacchio, A. (2004). Coupling
+PAF signaling to dynein regulation: structure of LIS1 in complex with PAF-
+acetylhydrolase. Neuron 44, 809–821.
+
+Torisawa, T., Nakayama, A., Furuta, K., Yamada, M., Hirotsune, S., and
+Toyoshima, Y.Y. (2011). Functional dissection of LIS1 and NDEL1 towards
+understanding the molecular mechanisms of cytoplasmic dynein regulation.
+J. Biol. Chem. 286, 1959–1965.
+
+Pandey, J.P., and Smith, D.S. (2011). A Cdk5-dependent switch regulates
+Lis1/Ndel1/dynein-driven organelle transport in adult axons. J. Neurosci. 31,
+17207–17219.
+
+Tsai, J.W., Bremner, K.H., and Vallee, R.B. (2007). Dual subcellular roles for
+LIS1 and dynein in radial neuronal migration in live brain tissue. Nat. Neurosci.
+10, 970–979.
+
+Qiu, W., Derr, N.D., Goodman, B.S., Villa, E., Wu, D., Shih, W., and Reck-
+Peterson, S.L.
+(2012). Dynein achieves processive motion using both
+stochastic and coordinated stepping. Nat. Struct. Mol. Biol. 19, 193–200.
+
+Reck-Peterson, S.L., Yildiz, A., Carter, A.P., Gennerich, A., Zhang, N., and
+Vale, R.D. (2006). Single-molecule analysis of dynein processivity and step-
+ping behavior. Cell 126, 335–348.
+
+Reiner, O., Carrozzo, R., Shen, Y., Wehnert, M., Faustinella, F., Dobyns, W.B.,
+Caskey, C.T., and Ledbetter, D.H. (1993). Isolation of a Miller-Dieker lissence-
+phaly gene containing G protein beta-subunit-like repeats. Nature 364,
+717–721.
+
+Roberts, A.J., Numata, N., Walker, M.L., Kato, Y.S., Malkova, B., Kon, T., Oh-
+kura, R., Arisaka, F., Knight, P.J., Sutoh, K., and Burgess, S.A. (2009). AAA+
+ring and linker swing mechanism in the dynein motor. Cell 136, 485–495.
+
+Roberts, A.J., Malkova, B., Walker, M.L., Sakakibara, H., Numata, N., Kon, T.,
+Ohkura, R., Edwards, T.A., Knight, P.J., Sutoh, K., Oiwa, K., and Burgess, S.A.
+(2012). ATP-driven remodeling of the linker domain in the dynein motor.
+Structure,
+in press. Published online August 2, 2012. http://dx.doi.org/
+10.1016/j.str.2012.07.003.
+
+Sasaki, S., Shionoya, A., Ishida, M., Gambello, M.J., Yingling, J., Wynshaw-
+Boris, A., and Hirotsune, S. (2000). A LIS1/NUDEL/cytoplasmic dynein heavy
+chain complex in the developing and adult nervous system. Neuron 28,
+681–696.
+
+Vale, R.D. (2003). The molecular motor toolbox for intracellular transport. Cell
+112, 467–480.
+
+Vallee, R.B., McKenney, R.J., and Ori-McKenney, K.M. (2012). Multiple modes
+of cytoplasmic dynein regulation. Nat. Cell Biol. 14, 224–230.
+
+Wang, S., and Zheng, Y. (2011). Identiﬁcation of a novel dynein binding domain
+in nudel essential for spindle pole organization in Xenopus egg extract. J. Biol.
+Chem. 286, 587–593.
+
+Woodruff, J.B., Drubin, D.G., and Barnes, G. (2009). Dynein-driven mitotic
+spindle positioning restricted to anaphase by She1p inhibition of dynactin
+recruitment. Mol. Biol. Cell 20, 3003–3011.
+
+Yamada, M., Toba, S., Yoshida, Y., Haratani, K., Mori, D., Yano, Y., Mimori-
+Kiyosue, Y., Nakamura, T.,
+(2008). LIS1 and
+NDEL1 coordinate the plus-end-directed transport of cytoplasmic dynein.
+EMBO J. 27, 2471–2483.
+
+Itoh, K., Fushiki, S., et al.
+
+Yi, J.Y., Ori-McKenney, K.M., McKenney, R.J., Vershinin, M., Gross, S.P., and
+Vallee, R.B. (2011). High-resolution imaging reveals indirect coordination of
+opposite motors and a role for LIS1 in high-load axonal transport. J. Cell
+Biol. 195, 193–201.
+
+Zhang, J., Han, G., and Xiang, X. (2002). Cytoplasmic dynein intermediate
+chain and heavy chain are dependent upon each other for microtubule end
+localization in Aspergillus nidulans. Mol. Microbiol. 44, 381–392.
+
+Schmidt, H., Gleave, E.S., and Carter, A.P. (2012). Insights into dynein motor
+domain function from a 3.3-A˚ crystal structure. Nat. Struct. Mol. Biol. 19,
+492–497, S1.
+
+Sheeman, B., Carvalho, P., Sagot, I., Geiser, J., Kho, D., Hoyt, M.A., and
+Pellman, D. (2003). Determinants of S. cerevisiae dynein localization and acti-
+vation: implications for the mechanism of spindle positioning. Curr. Biol. 13,
+364–372.
+
+Zhuang, L., Zhang, J., and Xiang, X. (2007). Point mutations in the stem region
+and the fourth AAA domain of cytoplasmic dynein heavy chain partially
+suppress the phenotype of NUDF/LIS1 loss in Aspergillus nidulans. Genetics
+175, 1185–1196.
+_Zy1kiewicz, E., Kijanska, M., Choi, W.C., Derewenda, U., Derewenda, Z.S., and
+Stukenberg, P.T. (2011). The N-terminal coiled-coil of Ndel1 is a regulated
+scaffold that recruits LIS1 to dynein. J. Cell Biol. 192, 433–445.
+
+986 Cell 150, 975–986, August 31, 2012 ª2012 Elsevier Inc.
+
+
