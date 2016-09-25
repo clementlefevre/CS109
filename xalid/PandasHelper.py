@@ -74,7 +74,7 @@ def search_device_data(mac_address_list):
 	df.to_csv(DATA_PATH+file_name)
 
 def display_spread():
-	df = pd.read_csv(DATA_PATH+"/nielsen_indexes_sites_per_devices.csv", index_col=0,nrows=1000)
+	df = pd.read_csv(DATA_PATH+"/nielsen_indexes_sites_per_devices.csv", index_col=0)
 	groupy = df.groupby('sites_count').count()
 	lst = [df]
 	del lst
