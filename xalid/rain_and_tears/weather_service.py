@@ -1,1 +1,0 @@
-WEATHER_URL = "http://lwf.meteogroup.de/index.php?customer=dilax&hash=cb616e79-1508-418a-b3c7-72c314079c61&locsearchtype=latlon&lat=46.291289&lon=7.53548"
