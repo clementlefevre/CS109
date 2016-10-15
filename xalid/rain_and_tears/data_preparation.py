@@ -39,14 +39,18 @@ def create_predictors_and_target(dataset_reg,dataset_dict,forecasting=False):
             dataset_dict[name]['y'] = group[COLUMNS_Y]
         
 def regularize(title,field,idbldsite,dataset_past_dict):
-    mean =  dataset_past_dict[idbldsite]['mean'][title]
-    std =  dataset_past_dict[idbldsite]['std'][title]
-    return (field-mean)/std
-    
+    if pd.isnull(field):
+        return 0
+    else:  
+        mean =  dataset_past_dict[idbldsite]['mean'][title]
+        std =  dataset_past_dict[idbldsite]['std'][title]
+        return (field-mean)/std
+        
     
 def regularize_forecast(df_forecast,dataset_past_dict):
     df_forecast = df_forecast.reset_index()
     for col in ['mintemperature','maxtemperature']:
+
         df_forecast[col+'_reg'] = df_forecast.apply(lambda x : regularize(col,x[col],x.idbldsite,dataset_past_dict),axis=1)
 
     for col in ['cloudamount_reg','weathersituation_reg']:
@@ -58,6 +62,7 @@ def regularize_forecast(df_forecast,dataset_past_dict):
 def add_weather_forecasts(df):
     df_weather = pd.read_csv('data/weather_forecasts.csv',parse_dates=['date'])
     df = pd.merge(df,df_weather, on=['idbldsite','date'],how='left')
+
     return df
 
 def create_forecasts_data(date_from,date_to):

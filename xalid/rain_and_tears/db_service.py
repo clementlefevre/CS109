@@ -35,6 +35,13 @@ def get_counts():
 def round_coordinate(coordinate):
 	return str(round(coordinate,2))
 
+def get_sites_dict():
+	sites = get_sites()
+	sites = sites[['idbldsite','sname','latitude','longitude']]
+	sites = sites.set_index('idbldsite')
+	sites_dict =  sites[['sname','latitude','longitude']].T.apply(tuple).to_dict()
+	return sites_dict
+
 
 # This method create a dataset aggregate per hour of weather update.
 def create_counts_sites_weather_holidays_intraday():

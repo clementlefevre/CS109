@@ -9,12 +9,7 @@ import db_service
 import config
 
 
-def get_sites_dict():
-    sites = db_service.get_sites()
-    sites = sites[['idbldsite','sname','latitude','longitude']]
-    sites = sites.set_index('idbldsite')
-    sites_dict =  sites[['sname','latitude','longitude']].T.apply(tuple).to_dict()
-    return sites_dict
+
 
 def get_weather(lat,lon):
     response = urllib2.urlopen(config.WEATHER_URL+"lat="+lat+"&lon="+lon)
@@ -29,7 +24,7 @@ def get_weather(lat,lon):
     
 
 def get_weather_forecasts():
-    sites_dict = get_sites_dict()
+    sites_dict = db_service.get_sites_dict()
     df_weather = pd.DataFrame()
     
     for site_id in sites_dict:
