@@ -89,3 +89,8 @@ def create_forecasts_data(date_from,date_to):
 
     return df_forecasts
 
+
+def create_baseline(df):
+    pass
+    
+
